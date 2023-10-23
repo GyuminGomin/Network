@@ -1,0 +1,82 @@
+TCP / IP
+
+tracert(traceroute) : 패킷이 라우팅되는 경로의 추적에 사용되는 유틸리티
+	목적지 경로까지 각 경유지의 응답속도를 확인할 수 있다.
+	IP 패킷이 목적지에 도달하기 위해 방문하는 게이트웨이의 순서 정보 확인할 수 있다.
+ipconfig(ifconfig) : interface information
+route : Routing table
+netstat : network status
+
+Sliding window : TCP 헤더에서 수신측 버퍼의 크기에 맞춰 송신측에서 데이터의 크기를 적절하게
+조절할 수 있게 해주는 필드를 이용한 흐름 제어 기법
+Buffer Network word : window?
+
+3계층 프로토콜 : IP, ICMP, IGMP(Group 전송 -> Dclass, Multicast), ARP, RARP??
+멀티캐스트를 위해 사용되는 프로토콜 : IGMP ( + Dclass )
+
+SNMP(Simple Network Management Protocol) : 네트워크 장비를 관리 감시하기 위한 목적으로
+TCP/IP 상에 정의된 응용 계층의 프로토콜로, 네트워크 관리자가 네트워크 성능을 관리하고 네트워크
+문제점을 찾아 수정하는 데 도움을 줌.
+네트워크 관리/모니터링 -> SNMP
+
+RIP : 네트워크 거리를 계산할 때 hop(경유하는 라우터 개수)의 총계만을 사용함
+Distance Vector Protocol중 RIP가 대표적
+
+IP (클래스 형식)
+11111111.11111111.11111111.11111111( 32bit )
+A 클래스 : 0#######.00000000.00000000.00000000 -> 0~127
+B 클래스 : 10######.00000000.00000000.00000000 -> 128~191
+C 클래스 : 110#####.00000000.00000000.00000000 -> 192~223
+D 클래스 : 1110####.00000000.00000000.00000000 -> 224~239 ->그룹 전송/멀티캐스트/IGMP
+E 클래스 : 11110###.00000000.00000000.00000000 -> 240~255 -> 연구, 실험용
+* 실제 인터넷 전송에는 A,B,C 클래스만 쓰임
+
+IP 헤더에 포함되는 필드 : Version, Header Checksum, Header Length
+*ACK는 헤더에 포함되지 않음
+
+TCP
+- 송신측 : 데이터를 패킷으로 나누어 일련번호, 송신측 주소, 에러검출코드를 추가함
+- 수신측 : 수신된 데이터의 에러를 검사함.
+*FEC(Forward Error Connection) : 수신측에서 스스로 수정 ex. 해밍코드?, 상승코드?
+
+Protocol
+IPv4 : 32bit -> ########.########.########.######## (2진수), ###.###.### (10진수)
+IPv6 : 128bit -> ####:####:####:####:####:####:####:#### (16진수 window)
+MAC : 48bit ??-> ##:##:##:## (16진수)
+
+TFTP(Trivial File Transfer Protocol) : 파일 전송 서비스, 인증 거치지 않음. UDP 세션 통해 전송,
+신속한 파일 전송 원할 때 FTP보다 유용 
+* TCP 세션 : (연결시 , 3-way handshaking), (해제시 , 4-way handshaking)
+
+netstat 명령 실행 시 나타내는 정보 : 커널의 경로 배정표, 네트워크 인터페이스 상태, 인터페이스 구성
+
+ARP(Address Resolution Protocol) : 이더넷같은 네트워크가 제공하는 BroadCast 기능을 사용해
+목적지 IP Address에 MAC(물리적 하드웨어 주소)을 매핑하는 것, IP->MAC 주소 매핑
+*RARP(Reverse Address Resolution Protocol) : MAC->IP 주소 매핑
+
+UDP
+- 연결 없는 IP 기반의 프로토콜로 최소한의 오버헤드를 가짐
+- 재송신 처리를 실행하지 못하기 때문에 신뢰성 떨어짐
+- 한 번에 많은 양의 데이터를 송신할 때 사용
+*ICMP(Internet Control Message Protocol) : 메시지 전송 3계층 프로토콜
+
+Subnet
+VPC, Subnet 생각하면 편함.
+A Class (8bit) : 11111111 00000000 00000000 00000000 [255.0.0.0]
+B Class (16bit) : 11111111 11111111 00000000 00000000 [255.255.0.0]
+C Class (24bit) : 11111111 11111111 11111111 00000000 [255.255.255.0]
+1-> network, 0-> host
+*host를 가장 많이 쓸 수 있는 클래스란 -> A Class
+
+BroadCast : 인터넷 전송 방식 중, 특정 호스트로부터 같은 네트워크 상의 모든 호스트에게 데이터를 전송
+*Unicast : 특정 하나
+*Multicast : 그룹
+*Anycast : 아무 하나
+-> IPv4 : Unicast, Multicast, Broadcast
+-> IPv6 : Anycast, Unicast, Multicast (전체 전송이 필요할 땐, 전체를 하나의 그룹으로 설정)
+
+NAT(Network Address Translation) : 네트워크 주소 변환 프로토콜
+ex. 공유기 하나의 공인 IP를 사설 IP로 변환하여 여러 기기가 사용
+- 사설 IP 주소를 공인 IP 주소로 바꿔주는 데 사용하는 통신망의 주소 변환 기술
+
+
