@@ -1,3 +1,6 @@
+https://velog.io/@kimjihong9/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EA%B4%80%EB%A6%AC%EC%82%AC-2%EA%B8%89-%ED%95%84%EA%B8%B0-%EA%B8%B0%EC%B6%9C-%EC%A0%95%EB%A6%AC
+
+
 TCP / IP
 
 tracert(traceroute) : 패킷이 라우팅되는 경로의 추적에 사용되는 유틸리티
