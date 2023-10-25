@@ -1,5 +1,3 @@
-https://velog.io/@kimjihong9/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EA%B4%80%EB%A6%AC%EC%82%AC-2%EA%B8%89-%ED%95%84%EA%B8%B0-%EA%B8%B0%EC%B6%9C-%EC%A0%95%EB%A6%AC
-
 https://www.comcbt.com/xe/jf
 
 TCP / IP
@@ -54,7 +52,6 @@ UDP
 - 연결 없는 IP 기반의 프로토콜로 최소한의 오버헤드를 가짐
 - 재송신 처리를 실행하지 못하기 때문에 신뢰성 떨어짐
 - 한 번에 많은 양의 데이터를 송신할 때 사용
-*ICMP(Internet Control Message Protocol) : 메시지 전송 3계층 프로토콜
 
 Subnet
 VPC, Subnet 생각하면 편함.
@@ -108,7 +105,6 @@ cf. 링 토폴로지의 경우, 양쪽 터미네이터 존재하지 않고 동�
 새로운 스테이션 설치할 때는 편리)
 
 IEEE 802.x 연결
-IEEE 802.3 : CSMA/CD
 IEEE 802.4 : Token-Bus
 IEEE 802.5 : Token-Ring
 IEEE 802.11 : wireless LAN
