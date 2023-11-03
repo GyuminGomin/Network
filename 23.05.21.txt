@@ -18,8 +18,3 @@ TCP/IP	      |	네트워크 일반  |	NOS	      |	네트워크 운용기기
 16. 2 o   				43. 3 o
 17. 3 x 1  				44. 1 o 
 						45.   x 2
-
-
-
-
-https://blog.naver.com/PostView.nhn?blogId=soojin_2604&logNo=221962521134
