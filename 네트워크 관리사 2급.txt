@@ -174,3 +174,4 @@ PC 및 네트워크 장치 통제(무결성 체크)
 유해 트래픽 탐지 및 차단 *방화벽: 외부->내부로 이동하는 네트워크 점검하는 역할
 
 
+https://ohaengsa.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC%EA%B4%80%EB%A6%AC%EC%82%AC-2%EA%B8%89-%EC%8B%A4%EA%B8%B0-%EB%8F%85%ED%95%99-%EA%B3%B5%EB%9E%B5%EB%B2%95
