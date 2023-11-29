@@ -889,6 +889,7 @@ $ sudo change -m 2 -M 100 () -l 10 - E 2021-12-25 John
 ```  
 -\<IEEE 802.11ax>
 
+
 # 실기
 
 ## 문제형 읽기
@@ -1203,4 +1204,4 @@ Type | Message
 ```
 - A,D,E
 
-https://spero-spera.tistory.com/entry/%EB%84%A4%ED%8A%B8%EC%9B%8C%ED%81%AC-%EA%B4%80%EB%A6%AC%EC%82%AC-2%EA%B8%89-%EC%8B%A4%EA%B8%B0-5%EC%9D%BC-%EB%8F%85%ED%95%99-%ED%95%A9%EA%B2%A9-%ED%9B%84%EA%B8%B0-%EA%B3%B5%EB%B6%80-%EB%B0%A9%EB%B2%95
+## 윈도우 문제
